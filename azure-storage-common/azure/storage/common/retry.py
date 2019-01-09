@@ -173,7 +173,7 @@ class ExponentialRetry(_Retry):
     Exponential retry.
     '''
 
-    def __init__(self, initial_backoff=15, increment_base=3, max_attempts=3,
+    def __init__(self, initial_backoff=15, increment_base=3, max_attempts=5,
                  retry_to_secondary=False, random_jitter_range=3):
         '''
         Constructs an Exponential retry object. The initial_backoff is used for 
